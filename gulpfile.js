@@ -1,15 +1,14 @@
-"use strict";
-
+'use strict';
 // Load plugins
 const gulp         = require('gulp');
-const concat       = require("gulp-concat");
-const rename       = require("gulp-rename");
+const concat       = require('gulp-concat');
+const rename       = require('gulp-rename');
 const terser       = require('gulp-terser');
-const sourcemaps   = require("gulp-sourcemaps");
-const autoprefixer = require("gulp-autoprefixer");
-const sass         = require("gulp-sass");
+const sourcemaps   = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+var sass           = require('gulp-sass')(require('node-sass'));
 const sassLint     = require('gulp-sass-lint');
-const eslint       = require("gulp-eslint");
+const eslint       = require('gulp-eslint');
 const phpcs        = require('gulp-phpcs');
 const phpcbf       = require('gulp-phpcbf');
 
@@ -92,7 +91,7 @@ function buildStyles() {
       }))
       .pipe(autoprefixer())
       .pipe(rename({
-        basename: "theme",
+        basename: 'theme',
         suffix: '.min'
       }))
       .pipe(sourcemaps.write('.'))
@@ -112,7 +111,7 @@ function buildEditorStyles() {
       }))
       .pipe(autoprefixer())
       .pipe(rename({
-        basename: "editor",
+        basename: 'editor',
         suffix: '.min'
       }))
       .pipe(sourcemaps.write('.'))
