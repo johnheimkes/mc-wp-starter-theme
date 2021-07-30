@@ -1,5 +1,5 @@
 {
-  "name": "modern-climate/mc-wp-starter-theme",
+  "name": "modern-climate/jbh-wp-starter-theme",
   "description": "A WordPress starter theme for Modern Climate.",
   "type": "wordpress-theme",
   "config": {
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "MC\\": ""
+      "JBH\\": ""
     }
   },
   "require": {

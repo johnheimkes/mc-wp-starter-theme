@@ -11,51 +11,51 @@ _Note: Use statements must be added for every class (field) used._
 
 **Basic Fields**
 ```php
-Text::make(__('Headline', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Text::make(__('Headline', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->required();
 ```
 
 ```php
-Textarea::make(__('Content', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Textarea::make(__('Content', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->rows(2);
 ```
 
 ```php
-Wysiwyg::make(__('Content', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Wysiwyg::make(__('Content', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->mediaUpload(false)
     ->required();
 ```
 
 ```php
-Url::make(__('Url', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Url::make(__('Url', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->required();
 ```
 
 ```php
-ColorPicker::make(__('Color', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+ColorPicker::make(__('Color', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->defaultValue('#4a9cff')
     ->required();
 ```
 
 ```php
-Image::make(__('Image', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Image::make(__('Image', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->returnFormat('array')
     ->previewSize('thumbnail') // thumbnail, medium or large
     ->required();
 ```
 
 ```php
-Select::make(__('Select', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Select::make(__('Select', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->choices([
-        'choice-1' => __('Choice 1', 'mc-starter'),
-        'choice-2' => __('Choice 2', 'mc-starter'),
+        'choice-1' => __('Choice 1', 'jbh-starter'),
+        'choice-2' => __('Choice 2', 'jbh-starter'),
     ])
     ->defaultValue('choice-1')
     ->returnFormat('value') // value, label or array
@@ -64,8 +64,8 @@ Select::make(__('Select', 'mc-starter'))
 ```
 
 ```php
-TrueFalse::make(__('True or False', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+TrueFalse::make(__('True or False', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->defaultValue(false)
     ->stylisedUi() // optinal on and off text labels
     ->required();
@@ -73,11 +73,11 @@ TrueFalse::make(__('True or False', 'mc-starter'))
 
 **Group**
 ```php
-Group::make(__('Group', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Group::make(__('Group', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->fields([
-        Text::make(__('Text', 'mc-starter')),
-        Image::make(__('Image', 'mc-starter')),
+        Text::make(__('Text', 'jbh-starter')),
+        Image::make(__('Image', 'jbh-starter')),
     ])
     ->layout('row')
     ->required();
@@ -85,27 +85,27 @@ Group::make(__('Group', 'mc-starter'))
 
 **Repeater**
 ```php
-Repeater::make(__('Repeater', 'mc-starter'))
-    ->instructions(__('Instructions go here.', 'mc-starter'))
+Repeater::make(__('Repeater', 'jbh-starter'))
+    ->instructions(__('Instructions go here.', 'jbh-starter'))
     ->fields([
-        Text::make(__('Text', 'mc-starter')),
-        Image::make(__('Image', 'mc-starter')),
+        Text::make(__('Text', 'jbh-starter')),
+        Image::make(__('Image', 'jbh-starter')),
     ])
     ->min(2)
     ->collapsed('name')
-    ->buttonLabel(__('Add Component', 'mc-starter'))
+    ->buttonLabel(__('Add Component', 'jbh-starter'))
     ->layout('table') // block, row or table
     ->required();
 ```
 
 **Conditional Logic**
 ```php
-Select::make(__('Select', 'mc-starter'))
+Select::make(__('Select', 'jbh-starter'))
     ->choices([
-        'choice-1' => __('Choice 1', 'mc-starter'),
-        'choice-2' => __('Choice 2', 'mc-starter'),
+        'choice-1' => __('Choice 1', 'jbh-starter'),
+        'choice-2' => __('Choice 2', 'jbh-starter'),
     ]),
-Text::make(__('Text', 'mc-starter'))
+Text::make(__('Text', 'jbh-starter'))
     ->conditionalLogic([
         ConditionalLogic::if('select')->equals('choice-1')
     ]);

@@ -1,14 +1,14 @@
 <?php
 
-namespace MC\App\Fields\FieldGroups;
+namespace JBH\App\Fields\FieldGroups;
 
 use WordPlate\Acf\Location;
-use MC\App\Fields\Options\Branding;
+use JBH\App\Fields\Options\Branding;
 
 /**
  * Class SiteOptionsFieldGroup
  *
- * @package MC\App\Fields\SiteOptionsFieldGroup
+ * @package JBH\App\Fields\SiteOptionsFieldGroup
  */
 class SiteOptionsFieldGroup extends RegisterFieldGroups
 {
@@ -18,7 +18,7 @@ class SiteOptionsFieldGroup extends RegisterFieldGroups
     public function registerFieldGroup()
     {
         register_extended_field_group([
-            'title'    => __('Site Options', 'mc-starter'),
+            'title'    => __('Site Options', 'jbh-starter'),
             'fields'   => $this->getFields(),
             'location' => [
                 Location::if('options_page', 'theme-general-options')
@@ -35,7 +35,7 @@ class SiteOptionsFieldGroup extends RegisterFieldGroups
     public function getFields()
     {
         return apply_filters(
-            'mc/field-group/site-options/fields',
+            'jbh/field-group/site-options/fields',
             array_merge(
                 (new Branding())->fields()
             )

@@ -1,6 +1,6 @@
 <?php
 
-namespace MC\App\Fields\Layouts;
+namespace JBH\App\Fields\Layouts;
 
 use WordPlate\Acf\Fields\Layout;
 use WordPlate\Acf\Fields\Wysiwyg;
@@ -9,7 +9,7 @@ use WordPlate\Acf\Fields\Textarea;
 /**
  * Class ContentArea
  *
- * @package MC\App\Fields\Layouts
+ * @package JBH\App\Fields\Layouts
  */
 class ContentArea extends Layouts
 {
@@ -21,14 +21,14 @@ class ContentArea extends Layouts
     public function fields()
     {
         return apply_filters(
-            'mc/layout/content-area',
-            Layout::make(__('Content Area', 'mc-starter'))
+            'jbh/layout/content-area',
+            Layout::make(__('Content Area', 'jbh-starter'))
                 ->layout('block')
                 ->fields([
                     $this->contentTab(),
-                    Textarea::make(__('Headline', 'mc-starter'))
+                    Textarea::make(__('Headline', 'jbh-starter'))
                         ->rows(2),
-                    Wysiwyg::make(__('Content', 'mc-starter'))
+                    Wysiwyg::make(__('Content', 'jbh-starter'))
                         ->mediaUpload(false)
                 ])
         );

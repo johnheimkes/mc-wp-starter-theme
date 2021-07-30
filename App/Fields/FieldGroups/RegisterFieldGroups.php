@@ -1,13 +1,13 @@
 <?php
 
-namespace MC\App\Fields\FieldGroups;
+namespace JBH\App\Fields\FieldGroups;
 
-use MC\App\Interfaces\WordPressHooks;
+use JBH\App\Interfaces\WordPressHooks;
 
 /**
  * Class RegisterFieldGroups
  *
- * @package MC\App\Fields
+ * @package JBH\App\Fields
  */
 abstract class RegisterFieldGroups implements WordPressHooks
 {

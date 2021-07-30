@@ -1,6 +1,6 @@
 <?php
 /**
- * @package MC
+ * @package JBH
  */
 ?>
 
@@ -28,7 +28,7 @@
         <?php
         the_content();
         wp_link_pages([
-            'before' => '<div class="page-links">' . __('Pages:', 'mc-starter'),
+            'before' => '<div class="page-links">' . __('Pages:', 'jbh-starter'),
             'after'  => '</div>',
         ]);
         ?>

@@ -1,6 +1,6 @@
 <?php
 
-namespace MC\App\Fields\Layouts;
+namespace JBH\App\Fields\Layouts;
 
 use WordPlate\Acf\Fields\Image as WPImage;
 use WordPlate\Acf\Fields\Layout;
@@ -8,7 +8,7 @@ use WordPlate\Acf\Fields\Layout;
 /**
  * Class Image
  *
- * @package MC\App\Fields\Layouts
+ * @package JBH\App\Fields\Layouts
  */
 class Image extends Layouts
 {
@@ -20,7 +20,7 @@ class Image extends Layouts
     public function fields()
     {
         return apply_filters(
-            'mc/layout/image',
+            'jbh/layout/image',
             Layout::make('Image')
                 ->layout('block')
                 ->fields([

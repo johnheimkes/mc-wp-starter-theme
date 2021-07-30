@@ -3,7 +3,7 @@ Starter WordPress theme. Features [Bootstrap for Sass](https://github.com/twbs/b
 
 Requires a minimum of WordPress 4.5.
 
-MC Starter Theme is built with **Composer** and **Gulp** usage in mind and is the recommended way to use this theme.
+JBH Starter Theme is built with **Composer** and **Gulp** usage in mind and is the recommended way to use this theme.
 
 ## What tools do I need to use the theme?
 1. [Node.js](https://github.com/ModernClimate/mc-wp-starter-theme/wiki/Install-Node.js)

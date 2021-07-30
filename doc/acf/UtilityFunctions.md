@@ -5,7 +5,7 @@ functions are convenient but significantly increase database queries compared to
 be used. Check out [this article](https://www.billerickson.net/advanced-custom-fields-frontend-dependency/) for
 more info.
 
-Fortunately the MC Wordpress Starter Theme comes with some handy utilities to avoid the ACF function overhead.
+Fortunately the JBH Wordpress Starter Theme comes with some handy utilities to avoid the ACF function overhead.
 
 **Location**<br/>
 `/App/Fields/ACF.php`

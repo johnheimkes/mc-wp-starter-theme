@@ -3,7 +3,7 @@
  * @phpcs:disable PSR1.Methods.CamelCapsMethodName.NotCamelCaps
  */
 
-namespace MC\App\Menus;
+namespace JBH\App\Menus;
 
 use Walker_Nav_Menu;
 
@@ -11,7 +11,7 @@ use Walker_Nav_Menu;
  * Class MenuWalker
  * A custom menu walker for the Foundation menu structure.
  *
- * @package MC\App
+ * @package JBH\App
  */
 class PrimaryMenuWalker extends Walker_Nav_Menu
 {

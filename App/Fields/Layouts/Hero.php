@@ -1,6 +1,6 @@
 <?php
 
-namespace MC\App\Fields\Layouts;
+namespace JBH\App\Fields\Layouts;
 
 use WordPlate\Acf\Fields\Link;
 use WordPlate\Acf\Fields\Group;
@@ -14,7 +14,7 @@ use WordPlate\Acf\Fields\ColorPicker;
 /**
  * Class Hero
  *
- * @package MC\App\Fields\Layouts
+ * @package JBH\App\Fields\Layouts
  */
 class Hero extends Layouts
 {
@@ -26,30 +26,30 @@ class Hero extends Layouts
     public function fields()
     {
         return apply_filters(
-            'mc/layout/hero',
-            Layout::make(__('Hero', 'mc-starter'))
+            'jbh/layout/hero',
+            Layout::make(__('Hero', 'jbh-starter'))
                 ->layout('block')
                 ->fields([
                     $this->contentTab(),
-                    Textarea::make(__('Headline', 'mc-starter'))
+                    Textarea::make(__('Headline', 'jbh-starter'))
                         ->rows(2),
-                    Wysiwyg::make(__('Content', 'mc-starter'))
+                    Wysiwyg::make(__('Content', 'jbh-starter'))
                         ->mediaUpload(false),
-                    Link::make(__('Button', 'mc-starter'))
+                    Link::make(__('Button', 'jbh-starter'))
                         ->returnFormat('array'),
                     $this->optionsTab(),
-                    Group::make(__('Background', 'mc-starter'))
+                    Group::make(__('Background', 'jbh-starter'))
                         ->layout('block')
                         ->fields([
-                            Image::make(__('Image', 'mc-starter'))
+                            Image::make(__('Image', 'jbh-starter'))
                                 ->previewSize('thumbnail'),
-                            ColorPicker::make(__('Color', 'mc-starter')),
-                            Select::make(__('Repeat', 'mc-starter'))
+                            ColorPicker::make(__('Color', 'jbh-starter')),
+                            Select::make(__('Repeat', 'jbh-starter'))
                                 ->choices([
-                                    'no-repeat' => __('No Repeat', 'mc-starter'),
-                                    'repeat'    => __('Repeat', 'mc-starter'),
-                                    'repeat-x'  => __('Repeat (X)', 'mc-starter'),
-                                    'repeat-y'  => __('Repeat (Y)', 'mc-starter'),
+                                    'no-repeat' => __('No Repeat', 'jbh-starter'),
+                                    'repeat'    => __('Repeat', 'jbh-starter'),
+                                    'repeat-x'  => __('Repeat (X)', 'jbh-starter'),
+                                    'repeat-y'  => __('Repeat (Y)', 'jbh-starter'),
                                 ])
                                 ->defaultValue('no-repeat')
                                 ->returnFormat('value')

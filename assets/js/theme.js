@@ -1,7 +1,7 @@
 /**
  * Custom JS Scripts
  *
- * @package MC
+ * @package JBH
  */
 
 (function () {

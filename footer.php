@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package MC
+ * @package JBH
  */
 ?>
 
@@ -11,7 +11,7 @@
         <div class="footer__copyright">
             <?php
             printf(
-                '&copy %1$s %2$s. ' . __('All Rights Reserved.', 'mc-starter'),
+                '&copy %1$s %2$s. ' . __('All Rights Reserved.', 'jbh-starter'),
                 date('Y'),
                 get_bloginfo('name')
             );

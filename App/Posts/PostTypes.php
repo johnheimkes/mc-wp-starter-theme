@@ -1,11 +1,11 @@
 <?php
 
-namespace MC\App\Posts;
+namespace JBH\App\Posts;
 
 /**
  * Class PostTypes
  *
- * @package MC\App\Posts
+ * @package JBH\App\Posts
  */
 class PostTypes
 {
@@ -17,8 +17,8 @@ class PostTypes
      *
      * PostTypes::registerPostType(
      * 'project',
-     * __( 'Project', 'mc-starter' ),
-     * __( 'Projects', 'mc-starter' ),
+     * __( 'Project', 'jbh-starter' ),
+     * __( 'Projects', 'jbh-starter' ),
      * [
      * 'menu_icon'   => 'dashicons-portfolio'
      * ]

@@ -1,13 +1,13 @@
 <?php
 
-namespace MC\App;
+namespace JBH\App;
 
-use MC\App\Interfaces\WordPressHooks;
+use JBH\App\Interfaces\WordPressHooks;
 
 /**
  * Class Scripts
  *
- * @package MC\App
+ * @package JBH\App
  */
 class Scripts implements WordPressHooks
 {
@@ -28,7 +28,7 @@ class Scripts implements WordPressHooks
     {
         /**
          * wp_enqueue_script(
-         * 'mc-vendor',
+         * 'jbh-vendor',
          * get_stylesheet_directory_uri() . '/build/js/vendor.min.js',
          * ['jquery'],
          * THEME_VERSION,
@@ -43,7 +43,7 @@ class Scripts implements WordPressHooks
         }
 
         wp_enqueue_script(
-            'mc-theme',
+            'jbh-theme',
             get_stylesheet_directory_uri() . "/build/js/theme{$filename}.js",
             ['jquery'],
             THEME_VERSION,
@@ -61,7 +61,7 @@ class Scripts implements WordPressHooks
     public function enqueueStyles()
     {
         wp_enqueue_style(
-            'mc-styles',
+            'jbh-styles',
             get_stylesheet_directory_uri() . '/build/css/theme.min.css',
             [],
             THEME_VERSION

@@ -1,13 +1,13 @@
 <?php
 
-namespace MC\App\Fields;
+namespace JBH\App\Fields;
 
-use MC\App\Media;
+use JBH\App\Media;
 
 /**
  * Class Util
  *
- * @package MC\App\Fields
+ * @package JBH\App\Fields
  */
 class Util
 {

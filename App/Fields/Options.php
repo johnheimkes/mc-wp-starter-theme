@@ -1,13 +1,13 @@
 <?php
 
-namespace MC\App\Fields;
+namespace JBH\App\Fields;
 
-use MC\App\Interfaces\WordPressHooks;
+use JBH\App\Interfaces\WordPressHooks;
 
 /**
  * Class Options
  *
- * @package MC\App\Fields
+ * @package JBH\App\Fields
  */
 class Options implements WordPressHooks
 {
@@ -28,8 +28,8 @@ class Options implements WordPressHooks
     {
         if (function_exists('acf_add_options_page')) {
             acf_add_options_page([
-                'page_title' => __('Site Options', 'mc-starter'),
-                'menu_title' => __('Options', 'mc-starter'),
+                'page_title' => __('Site Options', 'jbh-starter'),
+                'menu_title' => __('Options', 'jbh-starter'),
                 'menu_slug'  => 'theme-general-options',
                 'capability' => 'edit_posts',
                 'position'   => 28,

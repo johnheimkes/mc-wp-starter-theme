@@ -1,11 +1,11 @@
 <?php
 
-namespace MC\App\Fields\FieldGroups;
+namespace JBH\App\Fields\FieldGroups;
 
-use MC\App\Fields\Layouts\Hero;
-use MC\App\Fields\Layouts\Image;
-use MC\App\Fields\Layouts\ContentArea;
-use MC\App\Fields\FieldGroups\RegisterFieldGroups;
+use JBH\App\Fields\Layouts\Hero;
+use JBH\App\Fields\Layouts\Image;
+use JBH\App\Fields\Layouts\ContentArea;
+use JBH\App\Fields\FieldGroups\RegisterFieldGroups;
 
 use WordPlate\Acf\Location;
 use WordPlate\Acf\Fields\FlexibleContent;
@@ -13,7 +13,7 @@ use WordPlate\Acf\Fields\FlexibleContent;
 /**
  * Class PageBuilderFieldGroup
  *
- * @package MC\App\Fields\PageBuilderFieldGroup
+ * @package JBH\App\Fields\PageBuilderFieldGroup
  */
 class PageBuilderFieldGroup extends RegisterFieldGroups
 {
@@ -23,7 +23,7 @@ class PageBuilderFieldGroup extends RegisterFieldGroups
     public function registerFieldGroup()
     {
         register_extended_field_group([
-            'title'    => __('Page Builder', 'mc-starter'),
+            'title'    => __('Page Builder', 'jbh-starter'),
             'fields'   => $this->getFields(),
             'location' => [
                 Location::if('page_template', 'templates/page-builder.php')
@@ -39,9 +39,9 @@ class PageBuilderFieldGroup extends RegisterFieldGroups
      */
     public function getFields()
     {
-        return apply_filters('mc/field-group/page-builder/fields', [
-            FlexibleContent::make(__('Modules', 'mc-starter'))
-                ->buttonLabel(__('Add Module', 'mc-starter'))
+        return apply_filters('jbh/field-group/page-builder/fields', [
+            FlexibleContent::make(__('Modules', 'jbh-starter'))
+                ->buttonLabel(__('Add Module', 'jbh-starter'))
                 ->layouts([
                     (new ContentArea())->fields(),
                     (new Hero())->fields(),

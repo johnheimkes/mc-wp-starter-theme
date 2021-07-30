@@ -1,13 +1,13 @@
 <?php
 
-namespace MC\App;
+namespace JBH\App;
 
-use MC\App\Interfaces\WordPressHooks;
+use JBH\App\Interfaces\WordPressHooks;
 
 /**
  * Class Media
  *
- * @package MC\App
+ * @package JBH\App
  */
 class Media implements WordPressHooks
 {

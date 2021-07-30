@@ -1,11 +1,11 @@
 {
-  "name": "mc-wp-starter-theme",
+  "name": "jbh-wp-starter-theme",
   "version": "1.0.0",
   "description": "Starter wordpress theme",
-  "author": "Modern Climate",
+  "author": "John Heimkes",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ModernClimate/mc-wp-starter-theme.git"
+    "url": "git+https://github.com/johnheimkes/mc-wp-starter-theme.git"
   },
   "license": "MIT",
   "engines": {

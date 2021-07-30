@@ -1,20 +1,20 @@
 <?php
 
-namespace MC\App\Core;
+namespace JBH\App\Core;
 
-use MC\App\Interfaces\WordPressHooks;
+use JBH\App\Interfaces\WordPressHooks;
 
 /**
  * Class Transients
  *
  * Class for handling transient data in the theme
  *
- * @package MC\App\Core
+ * @package JBH\App\Core
  */
 class Transients implements WordPressHooks
 {
 
-    const KEY = 'mc_transient_keys';
+    const KEY = 'jbh_transient_keys';
 
     public $transientKeys = [];
 

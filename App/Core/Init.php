@@ -1,15 +1,15 @@
 <?php
 
-namespace MC\App\Core;
+namespace JBH\App\Core;
 
-use MC\App\Interfaces\WordPressHooks;
+use JBH\App\Interfaces\WordPressHooks;
 
 /**
  * Class Init
  *
  * Adds the class objects into a container so we can iterate and call common methods on initialization
  *
- * @package MC\App\Core
+ * @package JBH\App\Core
  */
 class Init implements \IteratorAggregate
 {

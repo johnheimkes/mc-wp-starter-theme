@@ -5,9 +5,9 @@
  * @global $data
  */
 
-use MC\App\Fields\ACF;
-use MC\App\Media;
-use MC\App\Fields\Util;
+use JBH\App\Fields\ACF;
+use JBH\App\Media;
+use JBH\App\Fields\Util;
 
 $image = ACF::getField('image', $data);
 

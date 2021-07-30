@@ -1,6 +1,6 @@
 <?php
 
-namespace MC\App\Fields\Options;
+namespace JBH\App\Fields\Options;
 
 use WordPlate\Acf\Fields\Tab;
 use WordPlate\Acf\Fields\Image;
@@ -8,7 +8,7 @@ use WordPlate\Acf\Fields\Image;
 /**
  * Class Branding
  *
- * @package MC\App\Fields\Options
+ * @package JBH\App\Fields\Options
  */
 class Branding
 {
@@ -20,7 +20,7 @@ class Branding
     public function fields()
     {
         return apply_filters(
-            'mc/options/branding',
+            'jbh/options/branding',
             [
                 Tab::make('Branding')
                     ->placement('left'),

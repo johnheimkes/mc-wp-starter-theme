@@ -2,31 +2,31 @@
 /**
  * Functions and definitions
  *
- * @package MC
+ * @package JBH
  */
 
-use MC\App\Core\Init;
-use MC\App\Setup;
-use MC\App\Scripts;
-use MC\App\Media;
-use MC\App\Shortcodes;
-use MC\App\Fields\ACF;
-use MC\App\Fields\Options;
-use MC\App\Fields\Modules;
-use MC\App\Fields\FieldGroups\SiteOptionsFieldGroup;
-use MC\App\Fields\FieldGroups\PageBuilderFieldGroup;
-use MC\App\Blocks\RegisterBlocks;
+use JBH\App\Core\Init;
+use JBH\App\Setup;
+use JBH\App\Scripts;
+use JBH\App\Media;
+use JBH\App\Shortcodes;
+use JBH\App\Fields\ACF;
+use JBH\App\Fields\Options;
+use JBH\App\Fields\Modules;
+use JBH\App\Fields\FieldGroups\SiteOptionsFieldGroup;
+use JBH\App\Fields\FieldGroups\PageBuilderFieldGroup;
+use JBH\App\Blocks\RegisterBlocks;
 
 /**
  * Define Theme Version
  * Define Theme directories
  */
 define('THEME_VERSION', '2.5.0');
-define('MC_THEME_DIR', trailingslashit(get_template_directory()));
-define('MC_THEME_PATH_URL', trailingslashit(get_template_directory_uri()));
+define('JBH_THEME_DIR', trailingslashit(get_template_directory()));
+define('JBH_THEME_PATH_URL', trailingslashit(get_template_directory_uri()));
 
 // Require Autoloader
-require_once MC_THEME_DIR . 'vendor/autoload.php';
+require_once JBH_THEME_DIR . 'vendor/autoload.php';
 
 /**
  * Theme Setup
@@ -47,7 +47,7 @@ add_action('after_setup_theme', function () {
         ->initialize();
 
     // Translation setup
-    load_theme_textdomain('mc-starter', MC_THEME_DIR . '/languages');
+    load_theme_textdomain('jbh-starter', JBH_THEME_DIR . '/languages');
 
     // Let WordPress manage the document title.
     add_theme_support('title-tag');

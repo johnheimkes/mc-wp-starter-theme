@@ -5,12 +5,12 @@ import { __ } from "@wordpress/i18n";
 import { Fragment } from "@wordpress/element";
 import { InnerBlocks } from "@wordpress/block-editor";
 
-const name = "mc-blocks/content";
+const name = "jbh-blocks/content";
 
 const settings = {
-  title: __("Content", "mc-starter"),
-  category: "mc_blocks",
-  description: __("Standard content display", "mc-starter"),
+  title: __("Content", "jbh-starter"),
+  category: "jbh_blocks",
+  description: __("Standard content display", "jbh-starter"),
   icon: "format-aside",
   edit: () => {
     const ALLOWED_BLOCKS = ['core/classic'];
@@ -20,7 +20,7 @@ const settings = {
 
     return (
       <Fragment>
-        <div className="mc-block__content mc-content">
+        <div className="jbh-block__content jbh-content">
           <InnerBlocks
             allowedBlocks={ALLOWED_BLOCKS}
             template={TEMPLATE}
@@ -33,7 +33,7 @@ const settings = {
   save: () => {
     return (
       <Fragment>
-        <div className="mc-block__content mc-content">
+        <div className="jbh-block__content jbh-content">
           <InnerBlocks.Content />
         </div>
       </Fragment>

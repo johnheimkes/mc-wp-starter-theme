@@ -1,14 +1,14 @@
 <?php
 
-namespace MC\App\Fields\Layouts;
+namespace JBH\App\Fields\Layouts;
 
-use MC\App\Fields\ACF;
+use JBH\App\Fields\ACF;
 use WordPlate\Acf\Fields\Tab;
 
 /**
  * Class Layouts
  *
- * @package MC\App\Fields\Layouts
+ * @package JBH\App\Fields\Layouts
  */
 abstract class Layouts
 {
@@ -26,7 +26,7 @@ abstract class Layouts
      */
     public function contentTab()
     {
-        return Tab::make(__('Content', 'mc-starter'), 'content-tab')
+        return Tab::make(__('Content', 'jbh-starter'), 'content-tab')
             ->placement('left');
     }
 
@@ -37,7 +37,7 @@ abstract class Layouts
      */
     public function optionsTab()
     {
-        return Tab::make(__('Options', 'mc-starter'), 'options-tab')
+        return Tab::make(__('Options', 'jbh-starter'), 'options-tab')
             ->placement('left');
     }
 }

@@ -1,17 +1,17 @@
 <?php
 
-namespace MC\App\Blocks;
+namespace JBH\App\Blocks;
 
-use MC\App\Interfaces\WordPressHooks;
+use JBH\App\Interfaces\WordPressHooks;
 
 /**
  * Class RegisterBlocks
  *
- * @package MC\App\Blocks
+ * @package JBH\App\Blocks
  */
 class RegisterBlocks implements WordPressHooks
 {
-    public $block_key = 'mc-blocks';
+    public $block_key = 'jbh-blocks';
 
     /**
      * Add class hooks.
@@ -23,13 +23,13 @@ class RegisterBlocks implements WordPressHooks
     }
 
     /**
-     * Register custom MC blocks
+     * Register custom JBH blocks
      */
     public function registerBlocks()
     {
         // automatically load dependencies and version
-        $dir_path   = MC_THEME_PATH_URL . 'blocks/';
-        $asset_file = include MC_THEME_DIR . 'blocks/build/index.asset.php';
+        $dir_path   = JBH_THEME_PATH_URL . 'blocks/';
+        $asset_file = include JBH_THEME_DIR . 'blocks/build/index.asset.php';
 
         wp_register_script(
             $this->block_key,
@@ -45,7 +45,7 @@ class RegisterBlocks implements WordPressHooks
         );
 
         register_block_type(
-            'mc-blocks/blocks',
+            'jbh-blocks/blocks',
             [
                 'editor_script' => $this->block_key,
                 'editor_style'  => $this->block_key
@@ -54,7 +54,7 @@ class RegisterBlocks implements WordPressHooks
     }
 
     /**
-     * Register custom MC blocks category
+     * Register custom JBH blocks category
      *
      * @param array $categories
      * @param object $post
@@ -65,8 +65,8 @@ class RegisterBlocks implements WordPressHooks
             $categories,
             [
                 [
-                    'slug'  => 'mc_blocks',
-                    'title' => __('MC Blocks', 'mc-starter'),
+                    'slug'  => 'jbh_blocks',
+                    'title' => __('JBH Blocks', 'mc-starter'),
                 ],
             ]
         );
